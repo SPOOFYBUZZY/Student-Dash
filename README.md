@@ -11,6 +11,10 @@ npm run dev
 
 Create a production bundle with `npm run build`, or preview it with `npm run preview`.
 
+## Vercel deployment
+
+This is a Vite single-page application. Configure the Vercel project with the repository root as the Root Directory, the **Vite** Framework Preset, `npm run build` as the Build Command, and `dist` as the Output Directory. The root `vercel.json` serves the SPA entry point for client-side routes while leaving `/api` requests out of the fallback.
+
 ## Demo roles
 
 Visit `/login`, enter any valid email and a password of at least six characters, then choose **Faculty** or **Student**. Use the profile menu to switch roles. Student views are restricted to the sample student, Aarav Mehta. Use **Reset demo data** by clearing this site's local storage to restore the original sample records.
