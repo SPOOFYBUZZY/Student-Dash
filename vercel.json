@@ -1,24 +1,9 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
-      "source": "/login",
-      "destination": "/"
-    },
-    {
-      "source": "/forgot-password",
-      "destination": "/"
-    },
-    {
-      "source": "/faculty/:path*",
-      "destination": "/"
-    },
-    {
-      "source": "/student/:path*",
-      "destination": "/"
-    },
-    {
-      "source": "/settings",
-      "destination": "/"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
-}
+} 
