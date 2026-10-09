@@ -1,7 +1,23 @@
 {
   "rewrites": [
     {
-      "source": "/((?!api(?:/|$)).*)",
+      "source": "/login",
+      "destination": "/"
+    },
+    {
+      "source": "/forgot-password",
+      "destination": "/"
+    },
+    {
+      "source": "/faculty/:path*",
+      "destination": "/"
+    },
+    {
+      "source": "/student/:path*",
+      "destination": "/"
+    },
+    {
+      "source": "/settings",
       "destination": "/"
     }
   ]

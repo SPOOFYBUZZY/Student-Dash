@@ -13,7 +13,7 @@ Create a production bundle with `npm run build`, or preview it with `npm run pre
 
 ## Vercel deployment
 
-This is a Vite single-page application. Configure the Vercel project with the repository root as the Root Directory, the **Vite** Framework Preset, `npm run build` as the Build Command, and `dist` as the Output Directory. The root `vercel.json` serves the SPA entry point for client-side routes while leaving `/api` requests out of the fallback.
+This is a Vite single-page application. Configure the Vercel project with the repository root as the Root Directory, the **Vite** Framework Preset, `npm run build` as the Build Command, and `dist` as the Output Directory. The root `vercel.json` serves the SPA entry point for the app's client-side routes. Its route-specific rewrites leave API paths and static assets untouched.
 
 ## Demo roles
 
