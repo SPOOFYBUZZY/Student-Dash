@@ -1,0 +1,41 @@
+export type Role = "faculty" | "student";
+export type Student = {
+  id: string;
+  name: string;
+  email: string;
+  department: string;
+  course: string;
+  year: number;
+  semester: number;
+  attendance: number;
+  score: number;
+  status: "On track" | "Needs review" | "At risk";
+};
+export type Assessment = {
+  id: string;
+  title: string;
+  subject: string;
+  type: string;
+  date: string;
+  maxMarks: number;
+  weight: number;
+  status: string;
+};
+export type AttendanceRecord = { studentId: string; date: string; subject: string; status: "Present" | "Absent" | "Leave" };
+export type Assignment = { id: string; title: string; subject: string; due: string; submissions: number; total: number; status: string };
+export type Skill = { name: string; interest: number; assessed: number; demonstrated: number; validated: boolean };
+export type SkillSubmission = {
+  id: string;
+  studentId: string;
+  skill: string;
+  knowledge: string;
+  level: "Beginner" | "Intermediate" | "Advanced";
+  evidence: string;
+  status: "Pending review" | "Approved" | "Needs changes";
+  submittedAt: string;
+  facultyFeedback?: string;
+  reviewedAt?: string;
+};
+export type Project = { id: string; title: string; owner: string; description: string; skills: string[]; status: string };
+export type Prediction = { studentId: string; target: string; risk: string; factors: string[]; period: string; updated: string; version: string; confidence: number; action: string };
+export type MentoringPlan = { id: string; studentId: string; goal: string; faculty: string; target: string; followUp: string; status: string };
